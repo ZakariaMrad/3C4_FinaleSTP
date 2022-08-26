@@ -8,23 +8,23 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*" />
-            <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*" />
-            <RowDefinition Height="1*" />
-            <RowDefinition Height="1*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Button>Button 1</Button>
-        <Button Grid.Column="1">Button 2</Button>
-        <Button Grid.Column="2">Button 3</Button>
-        <Button Grid.Row="1">Button 4</Button>
-        <Button Grid.Column="1" Grid.Row="1">Button 5</Button>
-        <Button Grid.Column="2" Grid.Row="1">Button 6</Button>
-        <Button Grid.Row="2">Button 7</Button>
-        <Button Grid.Column="1" Grid.Row="2">Button 8</Button>
-        <Button Grid.Column="2" Grid.Row="2">Button 9</Button>
+        <TextBlock Padding="10" Height="auto" VerticalAlignment="Center" Background="Red" TextAlignment="Left" FontSize="60">1</TextBlock>
+        <TextBlock Background="green" TextAlignment="center" FontWeight="Bold" FontSize="60" Grid.Column="1">2</TextBlock>
+        <TextBlock Background="blue" TextAlignment="right" FontStyle="Italic" FontSize="60" Grid.Column="2">3</TextBlock>
+        <TextBlock Background="Yellow" TextAlignment="Left" FontSize="60" Grid.Row="1">4</TextBlock>
+        <TextBlock Background="Cyan" TextAlignment="center" FontWeight="Bold" FontSize="60" Grid.Column="1" Grid.Row="1">5</TextBlock>
+        <TextBlock Background="Purple" TextAlignment="right" FontStyle="Italic" FontSize="60" Grid.Column="2" Grid.Row="1">6</TextBlock>
+        <TextBlock Background="brown" TextAlignment="Left" FontSize="60" Grid.Row="2">7</TextBlock>
+        <TextBlock Background="SaddleBrown" TextAlignment="center" FontWeight="Bold" FontSize="60" Grid.Column="1" Grid.Row="2">8</TextBlock>
+        <TextBlock Background="Gray" TextAlignment="right" FontStyle="Italic" FontSize="60" Grid.Column="2" Grid.Row="2">9</TextBlock>
     </Grid>
 </Window>
