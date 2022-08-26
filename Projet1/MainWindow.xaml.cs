@@ -24,5 +24,16 @@ namespace Projet1
         {
             InitializeComponent();
         }
+
+        private void openPage1(object sender, RoutedEventArgs e)
+        {
+            xxDemoEx1 p1 = new xxDemoEx1();
+            p1.Show();
+        }
+        private void openPage2(object sender, RoutedEventArgs e)
+        {
+            page2 p2 = new page2();
+            p2.Show();
+        }
     }
 }
