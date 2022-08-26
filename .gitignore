@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+Projet1/.vs/
+
+Projet1/obj/
+
+*.user
