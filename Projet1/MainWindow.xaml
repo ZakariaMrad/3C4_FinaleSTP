@@ -12,8 +12,8 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Button Grid.Column="0">Page1</Button>
-        <Button>Page2</Button>
-        <Button>Page3</Button>
+        <Button Click="openPage1" Grid.Column="0">Page1</Button>
+        <Button Click="openPage2" Grid.Column="1">Page2</Button>
+        <Button Click="" Grid.Column="2">Page3</Button>
     </Grid>          
 </Window>            
