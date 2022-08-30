@@ -34,5 +34,22 @@
             <Button VerticalAlignment="Center" Margin="20,5" Grid.Column="2" HorizontalAlignment="Right" Padding="5" Content="Se connecter" />
 
         </Grid>
+
+
+
+        <!--Page 2-->
+        <Grid Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock HorizontalAlignment="Right" Grid.Column="0" Height="500" Width="500" Margin="0,100,10,100" Background="DarkViolet"/>
+            <StackPanel Grid.Column="1" >
+                <TextBlock FontSize="50" FontWeight="Bold" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="120,100,30,0">Crée un espace accessible uniquement sur invitation où tu te sens bien</TextBlock>
+                <TextBlock Foreground="DarkGray" FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="120,50,40,0">Les serveurs Discord sont organisés en salons axés sur des sujets où vous pouvez collaborer, partager et simplement discuter de votre journée sans encombrer un groupe de discussion.</TextBlock>
+            </StackPanel>
+
+        </Grid>
+
     </StackPanel>
 </Window>
