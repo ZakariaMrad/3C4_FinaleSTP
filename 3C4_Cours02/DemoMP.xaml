@@ -34,7 +34,47 @@
             <Button VerticalAlignment="Center" Margin="20,5" Grid.Column="2" HorizontalAlignment="Right" Padding="5" Content="Se connecter" />
 
         </Grid>
+        <Grid Margin="0,200">
 
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="1">
+                <TextBlock FontWeight="Bold" FontSize="50" TextAlignment="Center" Foreground="White" Padding="0,70,0,20" TextWrapping="Wrap">IMAGINE UN ENDROIT...</TextBlock>
+                <TextBlock  FontSize="11.5" TextAlignment="Center" Foreground="White" Padding="0,10,0,0" TextWrapping="Wrap">…où tu pourrais faire partie d'un club scolaire, d'un groupe de gamers ou d'une communauté d'art internationale. Un endroit où toi et ta bande d'amis pouvez simplement passer du temps ensemble. Un endroit qui permettrait plus facilement de discuter tous les jours et de se retrouver plus souvent.</TextBlock>
+                <Grid Margin="0,20,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel>
+                        <Button Width="230">
+                            <WrapPanel>
+                                <TextBlock Background="Black" FontSize="16" Height="20" Width="20"></TextBlock>
+                                <TextBlock Margin="10" FontSize="15" Width="180">Télécharger pour Windows</TextBlock>
+                            </WrapPanel>
+
+                        </Button>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2">
+                        <Button Width="230" Background="Black">
+                            <StackPanel>
+                                <TextBlock  Foreground="White" FontSize="13" Margin="10">ouvrir Discord dans ton navigateur</TextBlock>
+                            </StackPanel>
+
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+
+
+
+        </Grid>
 
 
         <!--Page 2-->

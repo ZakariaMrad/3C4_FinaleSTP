@@ -35,5 +35,10 @@ namespace Projet1
             page2 p2 = new page2();
             p2.Show();
         }
+        private void openPage3(object sender, RoutedEventArgs e)
+        {
+            page2 p3 = new page2();
+            p3.Show();
+        }
     }
 }
