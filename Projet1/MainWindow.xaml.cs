@@ -27,7 +27,7 @@ namespace Projet1
 
         private void openPage1(object sender, RoutedEventArgs e)
         {
-            xxDemoEx1 p1 = new xxDemoEx1();
+            page1 p1 = new page1();
             p1.Show();
         }
         private void openPage2(object sender, RoutedEventArgs e)
