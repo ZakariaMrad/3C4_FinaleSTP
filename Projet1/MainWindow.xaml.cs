@@ -37,7 +37,7 @@ namespace Projet1
         }
         private void openPage3(object sender, RoutedEventArgs e)
         {
-            page2 p3 = new page2();
+            page3 p3 = new page3();
             p3.Show();
         }
     }

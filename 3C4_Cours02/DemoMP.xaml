@@ -7,89 +7,91 @@
         mc:Ignorable="d"
         Title="Discord" Height="720" Width="1280"
         FontSize="15"
-        Background="#FF345DDC">
-    <StackPanel>
-        <!--NAVBAR-->
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="3*"/>
-                <ColumnDefinition Width="1*"/>
-            </Grid.ColumnDefinitions>
-            <Button FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" Padding="5,5" Margin="20,5" Grid.Column="0" HorizontalAlignment="Left">
-                <WrapPanel>
-                    <TextBox VerticalAlignment="Center" FontWeight="Bold" BorderBrush="Transparent" Height="30" Width="30"></TextBox>
-                    <TextBox VerticalAlignment="Center" FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" FontSize="17" Margin="5,0,0,0">Discord</TextBox>
+        Background="White">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <!--NAVBAR-->
+            <Grid Background="#FF345DDC">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" Padding="5,5" Margin="20,5" Grid.Column="0" HorizontalAlignment="Left">
+                    <WrapPanel>
+                        <TextBox VerticalAlignment="Center" FontWeight="Bold" BorderBrush="Transparent" Height="30" Width="30"></TextBox>
+                        <TextBox VerticalAlignment="Center" FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" FontSize="17" Margin="5,0,0,0">Discord</TextBox>
+                    </WrapPanel>
+                </Button>
+                <WrapPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" Margin="12,5" Padding="5,5" Content="Télécharger" />
+                    <Button FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" Margin="12,5" Padding="5,5" Content="Nitro" />
+                    <Button FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" Margin="12,5" Padding="5,5" Content="Découvrir" />
+                    <Button FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" Margin="12,5" Padding="5,5" Content="Sécurité" />
+                    <Button FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" Margin="12,5" Padding="5,5" Content="Assistance" />
+                    <Button FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" Margin="12,5" Padding="5,5" Content="Blog" />
+                    <Button FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" Margin="12,5" Padding="5,5" Content="Emploi" />
                 </WrapPanel>
-            </Button>
-            <WrapPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Button FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" Margin="12,5" Padding="5,5" Content="Télécharger" />
-                <Button FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" Margin="12,5" Padding="5,5" Content="Nitro" />
-                <Button FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" Margin="12,5" Padding="5,5" Content="Découvrir" />
-                <Button FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" Margin="12,5" Padding="5,5" Content="Sécurité" />
-                <Button FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" Margin="12,5" Padding="5,5" Content="Assistance" />
-                <Button FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" Margin="12,5" Padding="5,5" Content="Blog" />
-                <Button FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" Margin="12,5" Padding="5,5" Content="Emploi" />
-            </WrapPanel>
-            <Button VerticalAlignment="Center" Margin="20,5" Grid.Column="2" HorizontalAlignment="Right" Padding="5" Content="Se connecter" />
+                <Button VerticalAlignment="Center" Margin="20,5" Grid.Column="2" HorizontalAlignment="Right" Padding="5" Content="Se connecter" />
 
-        </Grid>
-        <Grid Margin="0,200">
+            </Grid>
+            <Grid  Background="#FF345DDC" Margin="0,1">
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="3*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-            <StackPanel Grid.Column="1">
-                <TextBlock FontWeight="Bold" FontSize="50" TextAlignment="Center" Foreground="White" Padding="0,70,0,20" TextWrapping="Wrap">IMAGINE UN ENDROIT...</TextBlock>
-                <TextBlock  FontSize="11.5" TextAlignment="Center" Foreground="White" Padding="0,10,0,0" TextWrapping="Wrap">…où tu pourrais faire partie d'un club scolaire, d'un groupe de gamers ou d'une communauté d'art internationale. Un endroit où toi et ta bande d'amis pouvez simplement passer du temps ensemble. Un endroit qui permettrait plus facilement de discuter tous les jours et de se retrouver plus souvent.</TextBlock>
-                <Grid Margin="0,20,0,0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="1" Margin="0,125">
+                    <TextBlock FontWeight="ExtraBold" FontSize="65" TextAlignment="Center" Foreground="White" TextWrapping="Wrap">IMAGINE UN ENDROIT...</TextBlock>
+                    <TextBlock  FontSize="15" TextAlignment="Center" Foreground="White" Margin="0,20" TextWrapping="Wrap">…où tu pourrais faire partie d'un club scolaire, d'un groupe de gamers ou d'une communauté d'art internationale. Un endroit où toi et ta bande d'amis pouvez simplement passer du temps ensemble. Un endroit qui permettrait plus facilement de discuter tous les jours et de se retrouver plus souvent.</TextBlock>
+                    <Grid Margin="0,20,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
 
-                    <StackPanel>
-                        <Button Width="230">
-                            <WrapPanel>
-                                <TextBlock Background="Black" FontSize="16" Height="20" Width="20"></TextBlock>
-                                <TextBlock Margin="10" FontSize="15" Width="180">Télécharger pour Windows</TextBlock>
-                            </WrapPanel>
+                        <StackPanel >
+                            <Button Width="230" HorizontalAlignment="Right" Margin="0,0,10,0">
+                                <WrapPanel>
+                                    <TextBlock Background="Black" FontSize="16" Height="20" Width="20"></TextBlock>
+                                    <TextBlock Margin="10" FontSize="15" Width="180">Télécharger pour Windows</TextBlock>
+                                </WrapPanel>
 
-                        </Button>
-                    </StackPanel>
+                            </Button>
+                        </StackPanel>
 
-                    <StackPanel Grid.Column="2">
-                        <Button Width="230" Background="Black">
-                            <StackPanel>
-                                <TextBlock  Foreground="White" FontSize="13" Margin="10">ouvrir Discord dans ton navigateur</TextBlock>
-                            </StackPanel>
+                        <StackPanel Grid.Column="2">
+                            <Button Width="230" HorizontalAlignment="Left" Margin="10,0,0,0" Background="Black">
+                                <StackPanel>
+                                    <TextBlock  Foreground="White" FontSize="13" Margin="10">ouvrir Discord dans ton navigateur</TextBlock>
+                                </StackPanel>
 
-                        </Button>
-                    </StackPanel>
-                </Grid>
-            </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
 
 
 
-        </Grid>
+            </Grid>
 
 
-        <!--Page 2-->
-        <Grid Background="White">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-            </Grid.ColumnDefinitions>
-            <TextBlock HorizontalAlignment="Right" Grid.Column="0" Height="500" Width="500" Margin="0,100,10,100" Background="DarkViolet"/>
-            <StackPanel Grid.Column="1" >
-                <TextBlock FontSize="50" FontWeight="Bold" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="120,100,30,0">Crée un espace accessible uniquement sur invitation où tu te sens bien</TextBlock>
-                <TextBlock Foreground="DarkGray" FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="120,50,40,0">Les serveurs Discord sont organisés en salons axés sur des sujets où vous pouvez collaborer, partager et simplement discuter de votre journée sans encombrer un groupe de discussion.</TextBlock>
-            </StackPanel>
+            <!--Page 2-->
+            <Grid Background="White" Margin="0,1,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Right" Grid.Column="0" Height="500" Width="500" Margin="0,100,10,100" Background="DarkViolet"/>
+                <StackPanel Grid.Column="1" >
+                    <TextBlock FontSize="50" FontWeight="Bold" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="120,100,30,0">Crée un espace accessible uniquement sur invitation où tu te sens bien</TextBlock>
+                    <TextBlock Foreground="DarkGray" FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="120,50,40,0">Les serveurs Discord sont organisés en salons axés sur des sujets où vous pouvez collaborer, partager et simplement discuter de votre journée sans encombrer un groupe de discussion.</TextBlock>
+                </StackPanel>
 
-        </Grid>
+            </Grid>
 
-    </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
 </Window>
