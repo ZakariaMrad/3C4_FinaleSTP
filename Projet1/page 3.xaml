@@ -21,11 +21,11 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Column="0" FontSize="45px" Grid.RowSpan="2" Background="red"> 1</TextBlock>
         <TextBlock Grid.Column="1" FontSize="45px" TextAlignment="Center" Grid.ColumnSpan="3" Background="Green" FontStyle="Italic" Padding="0,20,0,0">2</TextBlock>
-        <TextBlock Grid.Column="3" Grid.Row="1" TextAlignment="Center" FontSize="45px" Grid.ColumnSpan="4" Background="Cyan" Padding="0,41,0,0">5</TextBlock>
-        <TextBlock Grid.Column="2" Grid.Row="1" TextAlignment="Center" FontSize="45px" Background="Yellow" Padding="0,40,0,0">4</TextBlock>
-        <TextBlock Grid.Column="1" Grid.Row="1" TextAlignment="Right" FontSize="45px" Background="Blue" Padding="0,40,0,0">3</TextBlock>
-        <TextBlock Grid.Column="4" Grid.Row="0" TextAlignment="Center" FontSize="45px" Background="Purple"  Padding="0,40,0,0">6</TextBlock>
-        <TextBlock Grid.Row="2" TextAlignment="Center" FontSize="45px" Background="Brown" Grid.ColumnSpan="3" Padding="0,40,0,0">7</TextBlock>
-        <TextBlock Grid.Column="3" Grid.Row="2" TextAlignment="Right" FontSize="45px" Grid.ColumnSpan="4" Background="Indigo" Padding="0,40,0,0">8</TextBlock>
+        <TextBlock Grid.Column="3" Grid.Row="1" TextAlignment="Center" FontSize="45px" Grid.ColumnSpan="4" FontWeight="Bold" Background="Cyan" Padding="0,41,0,0">5</TextBlock>
+        <TextBlock Grid.Column="2" Grid.Row="1" TextAlignment="Center" FontSize="45px" Background="Yellow" FontWeight="Bold" Padding="0,100,0,0">4</TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="1" TextAlignment="Center" FontSize="45px" Background="Blue" FontWeight="Bold" Padding="0,0,0,20">3</TextBlock>
+        <TextBlock Grid.Column="4" Grid.Row="0" TextAlignment="Center" FontSize="45px" FontStyle="Italic"  Background="Purple"  Padding="0,40,0,0">6</TextBlock>
+        <TextBlock Grid.Row="1" TextAlignment="Center" FontSize="45px" Background="Brown" Grid.ColumnSpan="3" Margin="0,173,0,0" Padding="0,25,0,0" Grid.RowSpan="2">7</TextBlock>
+        <TextBlock Grid.Column="3" Grid.Row="2" TextAlignment="Right" FontSize="45px" Grid.ColumnSpan="4" Background="Bisque" Padding="0,30,10,0">8</TextBlock>
     </Grid>
 </Window>
