@@ -92,6 +92,47 @@
 
             </Grid>
 
+            <!-- Page4-->
+            <Grid Background="White" Margin="0,1,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Right" Grid.Column="0" Height="500" Width="500" Margin="0,100,10,100" Background="DarkViolet"/>
+                <StackPanel Grid.Column="1" >
+                    <TextBlock FontSize="50" FontWeight="Bold" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="120,100,30,0">De quelques personnes à toute une communauté</TextBlock>
+                    <TextBlock Foreground="DarkGray" FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="120,50,40,0">Gère n'importe quelle communauté, grâce à des outils de modération et des permissions personnalisées pour les membres. Accorde des pouvoirs spéciaux aux membres, crée des salons privés, et plus encore.</TextBlock>
+                </StackPanel>
+
+            </Grid>
+            
+            <!--Footer-->
+            <StackPanel>
+                <TextBlock FontWeight="Bold" HorizontalAlignment="Center" FontSize="40">On se lance dans l'aventure?</TextBlock>
+                <Button Background="#FF345DDC" HorizontalAlignment="Center" Padding="15,5" Margin="0,10,0,100">
+                    <WrapPanel>
+                        <TextBlock Background="Black" FontSize="16" Height="25" Width="25"></TextBlock>
+                        <TextBlock Foreground="White" Margin="10" FontSize="18">Télécharger pour Windows</TextBlock>
+                    </WrapPanel>
+                </Button>
+                <TextBlock Padding="0,0,0,20" Background="Black" Foreground="#FF345DDC" FontWeight="ExtraBold" FontSize="50">IMAGINE UN ENDROIT</TextBlock>
+                <TextBlock Background="#FF345DDC" Height="5"></TextBlock>
+                <Grid Background="Black" Padding="0,0,0,50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button  FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" Padding="5,5" Margin="20,5" Grid.Column="0" HorizontalAlignment="Left">
+                        <WrapPanel>
+                            <TextBox VerticalAlignment="Center" FontWeight="Bold" BorderBrush="Transparent" Height="30" Width="30"></TextBox>
+                            <TextBox VerticalAlignment="Center" FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" FontSize="17" Margin="5,0,0,0">Discord</TextBox>
+                        </WrapPanel>
+                    </Button>
+                    <Button Background="#FF345DDC" Foreground="White" VerticalAlignment="Center" Margin="20,5" Grid.Column="1" HorizontalAlignment="Right" Padding="5" Content="Je m'inscris" />
+                </Grid>
+            </StackPanel>
+            
         </StackPanel>
     </ScrollViewer>
 </Window>
