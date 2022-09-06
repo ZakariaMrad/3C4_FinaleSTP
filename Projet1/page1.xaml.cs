@@ -18,9 +18,9 @@ namespace Projet1
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class xxDemoEx1 : Window
+    public partial class page1 : Window
     {
-        public xxDemoEx1()
+        public page1()
         {
             InitializeComponent();
         }

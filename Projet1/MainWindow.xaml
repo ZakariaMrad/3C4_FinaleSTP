@@ -6,14 +6,27 @@
         xmlns:local="clr-namespace:Projet1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        <Button Click="openPage1" Grid.Column="0">Page1</Button>
-        <Button Click="openPage2" Grid.Column="1">Page2</Button>
-        <Button Click="openPage3" Grid.Column="2">Page3</Button>
-    </Grid>          
+    <StackPanel>
+        <TextBlock FontSize="50" Margin="10">Cours 01</TextBlock>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Margin="10">
+                <TextBlock FontSize="30">Zakaria Mrad</TextBlock>
+                <TextBlock FontStyle="Italic" HorizontalAlignment="Right" FontSize="30">1839783</TextBlock>
+                <Button Click="openPage1" FontSize="25" Margin="10,5">Exercice 1</Button>
+                <Button Click="openPage2" FontSize="25" Margin="10,5">Exercice 2</Button>
+                <Button Click="openPage3" FontSize="25" Margin="10,5">Exercice 3</Button>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Margin="10">
+                <TextBlock FontSize="30">Jérémy Desjardins</TextBlock>
+                <TextBlock FontStyle="Italic" HorizontalAlignment="Right" FontSize="30">2043120</TextBlock>
+                <Button Click="openPage1" FontSize="25" Margin="10,5">Exercice 1</Button>
+                <Button Click="openPage2" FontSize="25" Margin="10,5">Exercice 2</Button>
+                <Button Click="openPage3" FontSize="25" Margin="10,5">Exercice 3</Button>
+            </StackPanel>
+        </Grid>
+    </StackPanel>          
 </Window>            

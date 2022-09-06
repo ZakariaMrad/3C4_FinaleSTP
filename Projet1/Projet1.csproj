@@ -16,7 +16,7 @@
     <Page Update="page 2.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
     </Page>
-    <Page Update="xxDemoEx1.xaml">
+    <Page Update="page1.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>
