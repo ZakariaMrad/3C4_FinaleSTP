@@ -18,9 +18,9 @@ namespace _3C4_Cours02
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class WindowJD : Window
     {
-        public MainWindow()
+        public WindowJD()
         {
             InitializeComponent();
         }
