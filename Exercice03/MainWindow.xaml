@@ -16,7 +16,7 @@
             <StackPanel Grid.Column="0" Margin="10">
                 <TextBlock FontSize="30">Zakaria Mrad</TextBlock>
                 <TextBlock FontStyle="Italic" HorizontalAlignment="Right" FontSize="30">1839783</TextBlock>
-                <Button x:Name="NewUserZiko" Click="NewUserZiko_Click" FontSize="25" Margin="10,5">Exercice</Button>
+                <Button Click="NewUserZiko_Click" FontSize="25" Margin="10,5">Exercice</Button>
             </StackPanel>
             <StackPanel Grid.Column="1" Margin="10">
                 <TextBlock FontSize="30">Jérémy Desjardins</TextBlock>
