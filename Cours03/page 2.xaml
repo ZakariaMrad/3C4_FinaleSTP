@@ -1,0 +1,26 @@
+﻿<Window x:Class="Projet1.page2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="0" FontWeight="Black" FontSize="45px" Grid.RowSpan="3" Background="red"> 1</TextBlock>
+        <TextBlock Grid.Column="1" FontSize="45px" TextAlignment="Center" Grid.ColumnSpan="3" Background="Green" FontStyle="Italic" Padding="0,20,0,0">2</TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="1" TextAlignment="Center" FontSize="45px" Grid.ColumnSpan="3" Background="Cyan" Padding="0,41,0,0">5</TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="2" TextAlignment="Left" FontSize="45px" Background="Yellow" Padding="0,40,0,0">4</TextBlock>
+        <TextBlock Grid.Column="2" Grid.Row="2" TextAlignment="Right" FontSize="45px" Background="Blue" Padding="0,40,0,0">3</TextBlock>
+    </Grid>
+</Window>

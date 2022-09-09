@@ -91,7 +91,34 @@
                 </StackPanel>
 
             </Grid>
+        
+            <!--Page 3-->
+            <Grid Background="White" Margin="0,1,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Right" Grid.Column="1" Height="500" Width="500" Margin="0,100,70,100" Background="DarkViolet"/>
+                <StackPanel Grid.Column="0" >
+                    <TextBlock FontSize="50" FontWeight="Bold" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="30,100,30,0">Là où il est facile de passer du temps ensemble</TextBlock>
+                    <TextBlock Foreground="DarkGray" FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="30,50,40,0">Prends place dans un salon vocal quand tu es libre. Les amis dans ton serveur peuvent voir que tu es là et immédiatement te rejoindre sans avoir besoin d'appeler.</TextBlock>
+                </StackPanel>
+            </Grid>
+            
+            <!--Page 4-->
+            <Grid Background="White" Margin="0,1,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Right" Grid.Column="0" Height="500" Width="500" Margin="0,100,10,100" Background="DarkViolet"/>
+                <StackPanel Grid.Column="1" >
+                    <TextBlock FontSize="50" FontWeight="Bold" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="120,100,30,0">De quelques personnes à toute une communauté</TextBlock>
+                    <TextBlock Foreground="DarkGray" FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="120,50,40,0">Gére n'importe quelle communauté, grâce à des outils de modération et des permissions personnalisées pour les membres. Accorde des pouvoirs spécuaix aux membres, crée des salons privés, et plus encore.</TextBlock>
+                </StackPanel>
+            </Grid>
 
+<<<<<<< HEAD
             <!-- Page4-->
             <Grid Background="White" Margin="0,1,0,0">
                 <Grid.ColumnDefinitions>
@@ -133,6 +160,49 @@
                 </Grid>
             </StackPanel>
             
+=======
+
+            <!--Page 5-->
+            <Grid Background="White" Margin="0,1,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <TextBlock HorizontalAlignment="center" Grid.Row="1" Height="1000" Width="1000" Background="DarkViolet"/>
+                <StackPanel Grid.Row="0" >
+                    <TextBlock FontSize="50" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap" Margin="30,100,30,0">UNE TECHNOLOGIE FIABLE POUR GARDER LE LIEN</TextBlock>
+                    <TextBlock Foreground="DarkGray" FontSize="20" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap" Margin="30,50,40,0">Grâce au chats vocaux et vidéo à faible latence, les interlocuteurs ont l'impression d'être dans la même pièce. Fais un petit coucou pas vidéo, regarde tes amis streamer leurs jeux, ou profitez du partage d'écran pour faire une session de dessins ensembles.</TextBlock>
+                </StackPanel>
+            </Grid>
+            
+            <!--Download Link-->
+            <TextBlock HorizontalAlignment="Center" FontWeight="ExtraBold" FontSize="35" Margin="0,40,0,10">On se lance dans l'aventure?</TextBlock>
+            <Button FontWeight="Bold" BorderBrush="Transparent" Background="#FF345DDC" Foreground="White" Padding="5,5" Margin="0,0,0,60"  HorizontalAlignment="Center">
+                <WrapPanel>
+                    <TextBox Background="Black" VerticalAlignment="Center" FontWeight="Bold" BorderBrush="Transparent" Height="40" Width="40"></TextBox>
+                    <TextBox VerticalAlignment="Center" BorderBrush="Transparent" Background="Transparent" Foreground="White" FontSize="17" Margin="5,0,0,0">Télécharger pour Windows</TextBox>
+                </WrapPanel>
+            </Button>
+            
+            <!--Footer-->
+            <TextBlock FontWeight="ExtraBlack" Padding="0,5,0,20" Background="Black" Foreground="#FF345DDC" FontSize="50">IMAGINE UN ENDROIT</TextBlock>
+            <TextBlock Background="#FF345DDC" Height="3"></TextBlock>
+            <Grid Background="Black">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" Padding="5,5" Margin="20,5" Grid.Column="0" HorizontalAlignment="Left">
+                    <WrapPanel>
+                        <TextBox VerticalAlignment="Center" FontWeight="Bold" BorderBrush="Transparent" Height="30" Width="30"></TextBox>
+                        <TextBox VerticalAlignment="Center" FontWeight="Bold" BorderBrush="Transparent" Background="Transparent" Foreground="White" FontSize="17" Margin="5,0,0,0">Discord</TextBox>
+                    </WrapPanel>
+                </Button>
+                <Button Background="#FF345DDC" BorderBrush="Transparent" Foreground="White" VerticalAlignment="Center" Margin="20,5" Grid.Column="1" HorizontalAlignment="Right" Padding="5" Content="Je m'inscris" />
+
+            </Grid>
+            <TextBlock Background="Black" Height="60"/>
+>>>>>>> main
         </StackPanel>
     </ScrollViewer>
 </Window>

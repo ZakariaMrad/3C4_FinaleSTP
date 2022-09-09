@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace _3C4_Cours02
+namespace Projet1
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class page_5 : Window
+    public partial class page1 : Window
     {
-        public page_5()
+        public page1()
         {
             InitializeComponent();
         }

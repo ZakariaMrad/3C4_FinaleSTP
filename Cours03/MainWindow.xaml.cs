@@ -13,16 +13,32 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace _3C4_Cours02
+namespace Projet1
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class page_3 : Window
+    public partial class MainWindow : Window
     {
-        public page_3()
+        public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void openPage1(object sender, RoutedEventArgs e)
+        {
+            page1 p1 = new page1();
+            p1.Show();
+        }
+        private void openPage2(object sender, RoutedEventArgs e)
+        {
+            page2 p2 = new page2();
+            p2.Show();
+        }
+        private void openPage3(object sender, RoutedEventArgs e)
+        {
+            page3 p3 = new page3();
+            p3.Show();
         }
     }
 }
