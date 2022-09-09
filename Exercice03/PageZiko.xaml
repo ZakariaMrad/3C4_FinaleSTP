@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Exercice03"
         mc:Ignorable="d"
-        Title="Cours 03 - Ziko" Height="525" Width="500">
+        Title="Cours 03 - Ziko" Height="525" Width="500"
+        FontSize="15">
 
     <StackPanel>
         <!--Header-->
@@ -31,81 +32,52 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <GridSplitter Grid.Column="0" Grid.Row="0" Grid.RowSpan="12" Margin="0,0,20,0" Width="2" IsEnabled="False"></GridSplitter>
-            <WrapPanel HorizontalAlignment="Right" Grid.Column="0" Grid.Row="0" Margin="0,5,30,0">
-                <TextBlock x:Name="PrefixT" FontWeight="Bold" FontSize="15">Prefix</TextBlock>
-            </WrapPanel>
-            <WrapPanel HorizontalAlignment="Right" Grid.Column="0" Grid.Row="1" Margin="0,5,30,0">
-                <TextBlock x:Name="FirstNT" FontWeight="Bold" FontSize="15">First Name</TextBlock>
-                </WrapPanel>
-            <WrapPanel HorizontalAlignment="Right" Grid.Column="0" Grid.Row="2" Margin="0,5,30,0">
-                <TextBlock x:Name="LastNT" FontWeight="Bold" FontSize="15">Last Name</TextBlock>
-     
-                </WrapPanel>
-            <WrapPanel HorizontalAlignment="Right" Grid.Column="0" Grid.Row="3" Margin="0,5,30,0">
-                <TextBlock FontSize="15">Adress</TextBlock>
-     
-                </WrapPanel>
-            <WrapPanel HorizontalAlignment="Right" Grid.Column="0" Grid.Row="4" Margin="0,5,30,0">
-                <TextBlock x:Name="PostalCodeT" FontWeight="Bold" FontSize="15">Postal Code</TextBlock>
-     
-                </WrapPanel>
-            <WrapPanel HorizontalAlignment="Right" Grid.Column="0" Grid.Row="5" Margin="0,5,30,0">
-                <TextBlock FontSize="15">Province</TextBlock>
-     
-                </WrapPanel>
-            <WrapPanel HorizontalAlignment="Right" Grid.Column="0" Grid.Row="6" Margin="0,5,30,0">
-                <TextBlock FontSize="15">Date of Birth</TextBlock>
-     
-                </WrapPanel>
-            <WrapPanel HorizontalAlignment="Right" Grid.Column="0" Grid.Row="7" Margin="0,5,30,0">
-                <TextBlock x:Name="UsernameT" FontWeight="Bold" FontSize="15">Username</TextBlock>
-     
-                </WrapPanel>
-            <WrapPanel HorizontalAlignment="Right" Grid.Column="0" Grid.Row="8" Margin="0,5,30,0">
-                <TextBlock x:Name="PasswordT" FontWeight="Bold" FontSize="15">Password</TextBlock>
-     
-                </WrapPanel>
-            <WrapPanel HorizontalAlignment="Right" Grid.Column="0" Grid.Row="9" Margin="0,5,30,0">
-                <TextBlock x:Name="ConfPasswordT" FontWeight="Bold" FontSize="15">Confirm Password</TextBlock>
-     
-                </WrapPanel>
-            <WrapPanel HorizontalAlignment="Right" Grid.Column="0" Grid.Row="10" Margin="0,5,30,0">
-                <TextBlock x:Name="AgreementT" FontWeight="Bold" FontSize="15">I agree to terms</TextBlock>
-     
-                </WrapPanel>
-            <WrapPanel HorizontalAlignment="Right" Grid.Column="0" Grid.Row="11" Margin="0,5,30,0">
-                <TextBlock FontSize="15">Newsletter</TextBlock>
-     
-                </WrapPanel>
-    
+
+            <!-- Form info -->
+            <GridSplitter Grid.Column="0" Grid.Row="0" Grid.RowSpan="12" Margin="0,0,20,0" Width="2" Background="LightGray" IsEnabled="False"></GridSplitter>
+            <TextBlock HorizontalAlignment="Right" Grid.Column="0" Grid.Row="0" Margin="0,5,30,0" x:Name="PrefixT" FontWeight="Bold" Text="Prefix" />
+            <TextBlock HorizontalAlignment="Right" Grid.Column="0" Grid.Row="1" Margin="0,5,30,0" x:Name="FirstNT" FontWeight="Bold" Text="First Name" />
+            <TextBlock HorizontalAlignment="Right" Grid.Column="0" Grid.Row="2" Margin="0,5,30,0" x:Name="LastNT" FontWeight="Bold" Text="Last Name" />
+            <TextBlock HorizontalAlignment="Right" Grid.Column="0" Grid.Row="3" Margin="0,5,30,0" Text="Adress"/>
+            <TextBlock HorizontalAlignment="Right" Grid.Column="0" Grid.Row="4" Margin="0,5,30,0" x:Name="PostalCodeT" FontWeight="Bold" Text="Postal Code" />
+            <TextBlock HorizontalAlignment="Right" Grid.Column="0" Grid.Row="5" Margin="0,5,30,0" Text="Province"/>
+            <TextBlock HorizontalAlignment="Right" Grid.Column="0" Grid.Row="6" Margin="0,5,30,0" Text="Date of Birth"/>
+            <TextBlock HorizontalAlignment="Right" Grid.Column="0" Grid.Row="7" Margin="0,5,30,0" x:Name="UsernameT" FontWeight="Bold" Text="Username" />
+            <TextBlock HorizontalAlignment="Right" Grid.Column="0" Grid.Row="8" Margin="0,5,30,0" x:Name="PasswordT" FontWeight="Bold" Text="Password" />
+            <TextBlock HorizontalAlignment="Right" Grid.Column="0" Grid.Row="9" Margin="0,5,30,0" x:Name="ConfPasswordT" FontWeight="Bold" Text="Confirm Password" />
+            <TextBlock HorizontalAlignment="Right" Grid.Column="0" Grid.Row="10" Margin="0,5,30,0" x:Name="AgreementT" FontWeight="Bold" Text="I agree to terms" />
+            <TextBlock HorizontalAlignment="Right" Grid.Column="0" Grid.Row="11" Margin="0,5,30,0" Text="Newsletter"/>
+
+            <!-- Form input -->
             <WrapPanel Grid.Column="1" Grid.Row="0">
-                <RadioButton x:Name="RadioBMr" Content="Mr" Margin="10,0" GroupName="MaritalStatus" VerticalContentAlignment="Center" FontSize="15" />
-                <RadioButton x:Name="RadioBMrs" Content="Mrs" GroupName="MaritalStatus" VerticalContentAlignment="Center" FontSize="15" />
+                <RadioButton x:Name="RadioBMr" Content="Mr" Margin="10,0" GroupName="MaritalStatus" VerticalContentAlignment="Center"  />
+                <RadioButton x:Name="RadioBMrs" Content="Mrs" GroupName="MaritalStatus" VerticalContentAlignment="Center"  />
             </WrapPanel>
-            <TextBox x:Name="FirstN" FontSize="15" Grid.Column="1" Grid.Row="1" Margin="0,5,30,0"/>
-            <TextBox x:Name="LastN" FontSize="15" Grid.Column="1" Grid.Row="2" Margin="0,5,30,0"/>
-            <TextBox x:Name="Adress" FontSize="15" Grid.Column="1" Grid.Row="3" Margin="0,5,30,0"/>
-            <TextBox x:Name="PostalCode" FontSize="15" Grid.Column="1" Grid.Row="4" Margin="0,5,30,0"/>
-            <ComboBox x:Name="Province" FontSize="15" Grid.Column="1" Grid.Row="5" Margin="0,5,30,0" Text="Select a province" Focusable="False" IsEditable="True" IsReadOnly="True">
-                <ComboBoxItem>QC</ComboBoxItem>
-                <ComboBoxItem>ON</ComboBoxItem>
-                <ComboBoxItem>BC</ComboBoxItem>
+            <TextBox x:Name="FirstN"  Grid.Column="1" Grid.Row="1" Margin="0,5,30,0"/>
+            <TextBox x:Name="LastN"  Grid.Column="1" Grid.Row="2" Margin="0,5,30,0"/>
+            <TextBox x:Name="Adress"  Grid.Column="1" Grid.Row="3" Margin="0,5,30,0"/>
+            <TextBox x:Name="PostalCode"  Grid.Column="1" Grid.Row="4" Margin="0,5,30,0"/>
+            <ComboBox x:Name="Province"  Grid.Column="1" Grid.Row="5" Margin="0,5,30,0" Text="Select a province" Focusable="False" IsEditable="True" IsReadOnly="True">
+                <ComboBoxItem Content="QC"/>
+                <ComboBoxItem Content="ON"/>
+                <ComboBoxItem Content="BC"/>
             </ComboBox>
-            <DatePicker x:Name="Birth" FontSize="15" Grid.Column="1" Grid.Row="6" Margin="0,5,30,0"/>
-            <TextBox x:Name="Username" FontSize="15" Grid.Column="1" Grid.Row="7" Margin="0,5,30,0"/>
-            <PasswordBox x:Name="Password" FontSize="15" Grid.Column="1" Grid.Row="8" Margin="0,5,30,0"/>
-            <PasswordBox x:Name="ConfPassword" FontSize="15" Grid.Column="1" Grid.Row="9" Margin="0,5,30,0"/>
-            <CheckBox x:Name="Agreement" VerticalAlignment="Bottom" FontSize="15" Grid.Column="1" Grid.Row="10" Margin="0,5,30,0"/>
-            <ToggleButton x:Name="Subscription" HorizontalAlignment="Left" Width="100" FontSize="15" Grid.Column="1" Grid.Row="11" Margin="0,5,30,0" Content="Subscribe"/>
+            <DatePicker x:Name="Birth"  Grid.Column="1" Grid.Row="6" Margin="0,5,30,0"/>
+            <TextBox x:Name="Username"  Grid.Column="1" Grid.Row="7" Margin="0,5,30,0"/>
+            <PasswordBox x:Name="Password"  Grid.Column="1" Grid.Row="8" Margin="0,5,30,0"/>
+            <PasswordBox x:Name="ConfPassword"  Grid.Column="1" Grid.Row="9" Margin="0,5,30,0"/>
+            <CheckBox x:Name="Agreement" VerticalAlignment="Bottom"  Grid.Column="1" Grid.Row="10" Margin="0,5,30,0"/>
+            <ToggleButton x:Name="Subscription" HorizontalAlignment="Left" Width="100"  Grid.Column="1" Grid.Row="11" Margin="0,5,30,0" Content="Subscribe"/>
         </Grid>
+        
+        <!-- Footer -->
         <WrapPanel Margin="0,30,0,15" HorizontalAlignment="Center">
-            <Button x:Name="SubmitButton" Background="Black" Click="SubmitButton_Click" Foreground="White" Padding="10,5" Margin="10,0" FontSize="15" Content="Submit"/>
-            <Button x:Name="ClearButton" Background="White" Click="ClearButton_Click"  Padding="10,5" Margin="10,0" FontSize="15" Content="Clear"/>
+            <Button x:Name="SubmitButton" Background="Black" Click="SubmitButton_Click" Foreground="White" Padding="10,5" Margin="10,0"  Content="Submit"/>
+            <Button x:Name="ClearButton" Background="White" Click="ClearButton_Click"  Padding="10,5" Margin="10,0"  Content="Clear"/>
         </WrapPanel>
         <WrapPanel HorizontalAlignment="Center">
-            <TextBlock FontSize="15" FontStyle="Italic" Text="Users: "/>
-            <TextBlock x:Name="UserCounter" FontSize="15" FontStyle="Italic" Text="0"/>
+            <TextBlock  FontStyle="Italic" Text="Users: "/>
+            <TextBlock x:Name="UserCounter"  FontStyle="Italic" Text="0"/>
         </WrapPanel>
     </StackPanel>
 </Window>            
